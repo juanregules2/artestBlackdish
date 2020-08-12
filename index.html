@@ -1,0 +1,223 @@
+<!-- Autor: xx_xroot and Angel-->
+<html>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css?family=Alatsi" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+  <script src="https://unpkg.com/merge-images"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/swiper/swiper.min.css" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <script src="js/swiper/swiper.min.js"></script>
+  <script src="js/aframe-ar.js"></script>
+  <script src="js/gsap/gsap.min.js"></script>
+  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="stylesheet" href="css/style-ar.css"/>
+  <!-- Script Mostrar y Ocultar Detalles -->
+  <script languague="javascript">
+    function mostrar() {
+      div = document.getElementById("flotante");
+      div.style.display = "";
+    }
+    function cerrar() {
+      div = document.getElementById("flotante");
+      div.style.display = "none";
+    }
+  </script>
+  <div class="box3 white" style="position: fixed; bottom: 0; right: 0; left: 0%; top: 0%; width: 100%; text-align: center; z-index: 1;">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="span-title">
+            <img class="rounded-circle" src="img/logo.png" width="60px" height="60px"/>
+          </div>
+        <div class="span-title">
+          <a id="bt2" href="#">
+            <img class="rounded-circle" src="img/casavieja/comida5.png"  width="60px" height="60px"/>
+          </a>
+        </div>
+        <div class="span-title">
+          <a href="#">
+            <img class="rounded-circle" src="img/casavieja/comida1.png"  width="60px" height="60px"/>
+          </a>
+        </div>
+        <div class="span-title">
+          <a href="#">
+            <img class="rounded-circle" src="img/casavieja/comida3.png"  width="60px" height="60px"/>
+          </a>
+        </div>
+
+        <div class="span-title">
+          <a href="#">
+            <img class="rounded-circle" src="img/casavieja/comida6.png"  width="60px" height="60px"/>
+          </a>
+        </div>
+        <div class="span-title">
+          <a href="#">
+            <img class="rounded-circle" src="img/casavieja/comida4.png"  width="60px" height="60px"/>
+          </a>
+        </div>
+        <div class="span-title">
+          <a href="#">
+            <img class="rounded-circle" src="img/casavieja/comida2.png"  width="60px" height="60px"/>
+          </a>
+        </div>
+        <div class="span-title">
+          <a href="#">
+            <img class="rounded-circle" src="img/casavieja/comida7.png"  width="60px" height="60px"/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div-s-r">
+    <div class="box white">
+      <p class="p-s-1">Hot Dog Casa Vieja</p>
+      <p align="center" class="p-s-2">$50.00</p>
+      <br />
+      <a href="javascript:mostrar();">
+        Detalles<i class="fas fa-sort-down"></i>
+      </a>
+      <div id="flotante" style="display: none;">
+        <div class="box2 white" id="close">
+          <a href="javascript:cerrar();"><i class="fas fa-sort-up"></i></a>
+          <p>Queso, champi&ntilde;ones, tocino y aros de ceboolla.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: fixed; bottom: 0; right: 12%;left: ;top: 84%;width: 100%;text-align: center;z-index: 1;">
+    <button style="font-size: 60px; left:10%" class="button" id="snap-button">
+      <i class="material-icons" style="font-size: 85%; position: center; text-align: center;">
+        add_circle_outline
+      </i>
+    </button>
+    <a id="download-link" href="#"></a>
+    <a href="#" >
+      <img style="position: fixed;bottom: 0;right: ;left: 1%;top: 84%;width: 20%;text-align: center;z-index: 1;" class="fle" src="img/casavieja/logocasavieja.png"/>
+    </a>
+       <a href="tel:2717321158">
+      <img style="position: fixed;bottom: ;right: 23%;left: ;top: 83%;width: 28%;text-align: center;z-index: 1;" src="img/phone.png"/>
+    </a>
+    <a href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir);window.location.href=('http://www.facebook.com/share.php?u='+dir2+'&amp;t='+tit2+'');">
+      <img style="position: fixed;bottom: ;right: 6%;left: ;top: 86%;width: 13%;text-align: center;z-index: 1;" src="img/compartir.png"/>
+    </a>
+  </div>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <body style="margin: 0px; overflow: hidden; width: 100%;">
+    <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false">
+      <a-marker preset="custom" type="pattern" url="assets/pattern-frame.patt">
+      <a-entity camera look-controls>
+        <a-image width="4.3" height="2.6" src="img/casavieja/comida5.png"></a-image>
+        </a-entity>
+        <script>
+          var m = document.querySelector("a-marker");
+          m.addEventListener("markerFound", (e) => {
+            console.log("found");
+            var v = document.querySelector("#mivideo").play();
+          });
+          m.addEventListener("markerLost", (e) => {
+            console.log("lost");
+            var v = document.querySelector("#mivideo").play();
+          });
+
+          function resizeCanvas(origCanvas, width, height) {
+            let resizedCanvas = document.createElement("canvas");
+            let resizedContext = resizedCanvas.getContext("2d");
+
+            resizedCanvas.height = height;
+            resizedCanvas.width = width;
+
+            resizedContext.drawImage(origCanvas, 0, 0, width, height);
+            return resizedCanvas.toDataURL();
+          }
+
+          document
+            .getElementById("snap-button")
+            .addEventListener("click", function () {
+              let aScene = document
+                .querySelector("a-scene")
+                .components.screenshot.getCanvas("perspective");
+              let frame = captureVideoFrame("video", "png");
+              aScene = resizeCanvas(aScene, frame.width, frame.height);
+              frame = frame.dataUri;
+
+              mergeImages([frame, aScene]).then((b64) => {
+                let link = document.getElementById("download-link", "jpeg");
+                link.setAttribute("download", "AR.jpeg");
+                link.setAttribute("href", b64);
+                link.click();
+                console.log("foto tomada");
+              });
+            });
+
+          function captureVideoFrame(video, format, width, height) {
+            if (typeof video === "string") {
+              video = document.querySelector(video);
+            }
+
+            format = format || "jpeg";
+
+            if (!video || (format !== "png" && format !== "jpeg")) {
+              return false;
+            }
+
+            var canvas = document.createElement("CANVAS");
+
+            canvas.width = width || video.videoWidth;
+            canvas.height = height || video.videoHeight;
+            canvas.getContext("2d").drawImage(video, 0, 0);
+            var dataUri = canvas.toDataURL("image/" + format);
+            var data = dataUri.split(",")[1];
+            var mimeType = dataUri.split(";")[0].slice(5);
+
+            var bytes = window.atob(data);
+            var buf = new ArrayBuffer(bytes.length);
+            var arr = new Uint8Array(buf);
+
+            for (var i = 0; i < bytes.length; i++) {
+              arr[i] = bytes.charCodeAt(i);
+            }
+
+            var blob = new Blob([arr], { type: mimeType });
+            return {
+              blob: blob,
+              dataUri: dataUri,
+              format: format,
+              width: canvas.width,
+              height: canvas.height,
+            };
+          }
+        </script>
+        <!--Fin Script tomar foto -->
+      </a-marker>
+      <!-- Fin marker-->
+      <a-entity camera></a-entity>
+      <!--Se inicializa la entidad con el el atributo camara que muestra el modelo solo cuando ve el tarjet, si no aparece el tarjet el modelo no aparece. -->
+    </a-scene>
+    <!--Fin de toda la escena AR -->
+  </body>
+  <!--Fin Script tomar foto -->
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: 5,
+      spaceBetween: 50,
+      slidesPerGroup: 5,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</html>
